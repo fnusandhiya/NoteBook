@@ -14,9 +14,12 @@
 		9F278F932264BE5400A20F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F278F912264BE5400A20F3F /* LaunchScreen.storyboard */; };
 		9F2BB1912268E76500404499 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BB18F2268E76500404499 /* DataModel.xcdatamodeld */; };
 		9FD94BA0226A316C0053B47F /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD94B9F226A316C0053B47F /* CategoryTableViewController.swift */; };
+		CC057D1198B2095B64660168 /* Pods_NoteBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76980126958652CB4367E5F2 /* Pods_NoteBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F53FF1B6617E277ECF16834 /* Pods-NoteBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBook.debug.xcconfig"; path = "Target Support Files/Pods-NoteBook/Pods-NoteBook.debug.xcconfig"; sourceTree = "<group>"; };
+		76980126958652CB4367E5F2 /* Pods_NoteBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F278F852264BE5300A20F3F /* NoteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F278F882264BE5300A20F3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F278F8A2264BE5300A20F3F /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		9F278F942264BE5400A20F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F2BB1902268E76500404499 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		9FD94B9F226A316C0053B47F /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		E443710A63FC7756F8625B9B /* Pods-NoteBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteBook.release.xcconfig"; path = "Target Support Files/Pods-NoteBook/Pods-NoteBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC057D1198B2095B64660168 /* Pods_NoteBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				9F278F872264BE5300A20F3F /* NoteBook */,
 				9F278F862264BE5300A20F3F /* Products */,
+				AB5F5E2DF79F0C9E89A1C04B /* Pods */,
+				F0501E4575B23385C905069D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,24 @@
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
+		AB5F5E2DF79F0C9E89A1C04B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F53FF1B6617E277ECF16834 /* Pods-NoteBook.debug.xcconfig */,
+				E443710A63FC7756F8625B9B /* Pods-NoteBook.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F0501E4575B23385C905069D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76980126958652CB4367E5F2 /* Pods_NoteBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F278F972264BE5400A20F3F /* Build configuration list for PBXNativeTarget "NoteBook" */;
 			buildPhases = (
+				099A4509FEC947EA60256B5F /* [CP] Check Pods Manifest.lock */,
 				9F278F812264BE5300A20F3F /* Sources */,
 				9F278F822264BE5300A20F3F /* Frameworks */,
 				9F278F832264BE5300A20F3F /* Resources */,
+				C2F7B4C97601DFAB8DA1FCC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		099A4509FEC947EA60256B5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2F7B4C97601DFAB8DA1FCC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoteBook/Pods-NoteBook-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoteBook/Pods-NoteBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F278F812264BE5300A20F3F /* Sources */ = {
@@ -320,6 +396,7 @@
 		};
 		9F278F982264BE5400A20F3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F53FF1B6617E277ECF16834 /* Pods-NoteBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -337,6 +414,7 @@
 		};
 		9F278F992264BE5400A20F3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E443710A63FC7756F8625B9B /* Pods-NoteBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

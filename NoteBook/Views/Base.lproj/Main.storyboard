@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Items-->
+        <!--Notes-->
         <scene sceneID="qLo-s9-KYq">
             <objects>
                 <tableViewController id="U70-G6-p6T" customClass="TodoListViewController" customModule="NoteBook" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                             <outlet property="delegate" destination="U70-G6-p6T" id="fBe-gN-hRr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Items" id="TTL-hb-v6m">
+                    <navigationItem key="navigationItem" title="Notes" id="TTL-hb-v6m">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="GlM-gm-Ofz">
                             <connections>
                                 <action selector="addButtonPressed:" destination="U70-G6-p6T" id="2hT-Ks-KCy"/>
@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="9" y="104"/>
         </scene>
-        <!--Todoey-->
+        <!--NoteBook-->
         <scene sceneID="gl4-dZ-Yd1">
             <objects>
                 <tableViewController id="0hD-P3-RvW" customClass="CategoryTableViewController" customModule="NoteBook" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,7 +100,7 @@
                             <outlet property="delegate" destination="0hD-P3-RvW" id="aAw-Er-Aep"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="iYx-ie-Xca">
+                    <navigationItem key="navigationItem" title="NoteBook" id="iYx-ie-Xca">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CQJ-23-rsI">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
